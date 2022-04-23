@@ -127,6 +127,12 @@ body{
    margin-left: 10px;
                                                                                                                          
 }
+
+#seta:hover{
+    cursor: pointer;
+}
+
+
   #containerEsquerda{
       position: relative;
   }
