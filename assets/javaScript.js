@@ -4,6 +4,7 @@ let descrip = document.getElementById("inputDesc")
 let copiar = document.getElementById("inputCopiar")
 
 
+
 document.getElementById("buttonCript").addEventListener("click", function(){
     let input = encript.value
     let result = input.replaceAll("e", "enter")
