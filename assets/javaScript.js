@@ -43,7 +43,7 @@ document.getElementById("buttonCopiar").addEventListener("click", function(){
     const elemento = document.createElement('div')
     elemento.id = "Copiar"
     elemento.innerHTML = "<p>Mensagem Copiada</p>"
-    document.getElementById("div-cop").appendChild(elemento)
+    document.body.appendChild(elemento)
     setTimeout(removeCopiar, 2000)
 
 })
