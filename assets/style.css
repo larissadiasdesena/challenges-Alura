@@ -1,0 +1,184 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around ;
+    background-color:  #791e0938;
+
+}
+
+
+.container {
+    padding:10px;
+    border-radius: 8px;
+    width: 60%;
+    height: 30vh;
+    background-image: linear-gradient(65deg, #260f0964, #552f2f);
+    display: flex;
+    box-shadow: 3px 6px 11px 9px rgba(0,0,0,0,66 );
+}
+
+.div-cop-textarea {
+
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+
+
+#div-cript{
+    flex-basis: 50%;
+    
+
+}
+
+#div-desc{
+    flex-basis: 50%;
+  
+}
+
+.div-cont-textarea{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 8px;
+
+}
+
+.div-cont-textarea textarea {
+    resize: none;
+    height: 85%;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px;
+   background-color:  #ece7dd;
+    
+}
+
+.div-cont-textarea input  {
+    width: 50%;
+    display: flex;
+    margin: 0px auto;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 5px 0px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: 1px solid #D089D6;
+    background-color: #ece7dd;
+}
+
+
+.div-cop-textarea input {
+    width: 20%;
+    display: flex;
+    margin: 0px auto;
+    margin-top: 10px;
+    justify-content: center;
+    padding: 5px 0px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: 1px solid #D089D6;
+    background-color:#ece7dd;
+
+}
+#div-cop {
+
+    display: flex;
+    flex-direction: column;
+    
+    
+
+
+}
+#conteiner{
+ height: 60vh;
+ background-color: #552f2f;
+ padding: 0px;
+ 
+
+}
+
+.div-cop-textarea{
+  height: 100%;
+  margin-bottom: 500px;
+
+}
+.div-cop-textarea textarea {
+    resize:none;
+    height: 70%;
+    background-color:  #ece7dd;
+    font-size: 15px;
+    border-radius: 8px;
+    padding: 8px;
+   
+
+}
+
+#seta{
+   width: 80px;
+   height: 80px;
+   margin-left: 10px;
+                                                                                                                         
+}
+  #containerEsquerda{
+      position: relative;
+  }
+  #Copiar{
+      position: relative;
+      margin-top: 5px;
+      height: 25%;
+      right: 5px;
+      bottom: 0px;
+      background-color: rgb(192, 164, 177);
+      font-size: 15px;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      animation: Copiar 1s ease-in-out;
+  }
+
+  #Copiar p {
+      text-align: center;
+  }
+  
+  @keyframes Copiar {
+      0% {
+          opacity: 0%;
+          transform: translateY(-10px);
+      }
+      100% {
+          opacity: 100%;
+          transform: transleteY(0px);
+      }
+  }
+
+  footer{
+    position: absolute;
+    bottom: 0;
+    color: black;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 100px;
+
+  }
+  header{
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    font-size: larger;
+
+
+
+ 
+
+    
+  }
