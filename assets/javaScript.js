@@ -14,6 +14,9 @@ document.getElementById("buttonCript").addEventListener("click", function(){
     result = result.replaceAll("u", "ufat")
     encript.value = ""
     descrip.value = result
+    
+
+    
 })
 
 document.getElementById("buttonDescr").addEventListener("click", function(){
@@ -28,6 +31,7 @@ document.getElementById("buttonDescr").addEventListener("click", function(){
     result = result.replaceAll("ufat", "u")
     descrip.value = ""
     encript.value = result
+  
 
 
 })
@@ -42,7 +46,7 @@ document.getElementById("buttonCopiar").addEventListener("click", function(){
 
     const elemento = document.createElement('div')
     elemento.id = "Copiar"
-    elemento.innerHTML = "<p>Mensagem Copiada</p>"
+    elemento.innerHTML = "<p>Texto Copiado</p>"
     document.getElementById("div-cop").appendChild(elemento)
     setTimeout(removeCopiar, 2000)
 
@@ -60,8 +64,5 @@ document.getElementById("seta").addEventListener("click", function(){
 function removeCopiar(){
     document.getElementById('Copiar').remove()
 }
-
-
-
 
 
