@@ -15,9 +15,10 @@ document.getElementById("buttonCript").addEventListener("click", function(){
         // Mensagem na tela flutuante 
         const elemento = document.createElement('div')
         elemento.id = "mensagemErro"
-        elemento.innerHTML = "<p>Sem letras maiúsculas ou com acento.</p>"
+        elemento.innerHTML = "<p>Apenas letras minúsculas e sem acento.</p>"
         document.body.appendChild(elemento)
         setTimeout(removeErro, 2000)
+        
         
         function removeErro(){
             document.getElementById('mensagemErro').remove()

@@ -1,17 +1,23 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Parisienne&family=VT323&display=swap');
+
+/* corpo da página */
 body{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    width: 100%;
+    max-width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around ;
-    background-color:  #791e0938;
+    background-color: #791e0926;
 
 }
 
-
+/* Container encript e descrip*/
 .container {
     padding:10px;
     border-radius: 8px;
@@ -22,6 +28,7 @@ body{
     box-shadow: 3px 6px 11px 9px rgba(0,0,0,0,66 );
 }
 
+/* Conteiner área de copiar - toda */
 .div-cop-textarea {
 
     padding: 10px;
@@ -44,6 +51,7 @@ body{
   
 }
 
+/* dados exclusivamente do container encri e desc */
 .div-cont-textarea{
     display: flex;
     flex-direction: column;
@@ -51,6 +59,7 @@ body{
 
 }
 
+/* dados exclusivamente do container encri e desc */
 .div-cont-textarea textarea {
     resize: none;
     height: 85%;
@@ -60,7 +69,7 @@ body{
    background-color:  #ece7dd;
     
 }
-
+/* dados exclusivamente do botão encri e desc */
 .div-cont-textarea input  {
     width: 50%;
     display: flex;
@@ -74,7 +83,7 @@ body{
     background-color: #ece7dd;
 }
 
-
+/* dados exclusivamente do botão copiar  */
 .div-cop-textarea input {
     width: 20%;
     display: flex;
@@ -95,6 +104,7 @@ body{
 
 }
 
+/* dados exclusivamente da borda do container  */
 #conteiner{
  height: 60vh;
  background-image: linear-gradient(65deg, #27080094, #552f2f);
@@ -110,6 +120,8 @@ body{
   margin-bottom: 300px;
 
 }
+
+/* dados exclusivamente de dentro da área de escrever do container copiar */
 .div-cop-textarea textarea {
     resize:none;
     height: 70%;
@@ -121,6 +133,7 @@ body{
 
 }
 
+/* dimensões da seta */
 #seta{
    width: 80px;
    height: 80px;
@@ -131,25 +144,25 @@ body{
       position: relative;
 
   }
+
+
   #Copiar{
-      position: relative;
-      margin-top: 5px;
-      height: 25%;
-      right: 50px;
-      bottom: 0px;
-      background-color: rgb(192, 164, 177);
-      font-size: 15px;
-      border-radius: 15px;
-      display: flex;
-      align-items: center;
-      padding: 8px;
-      animation: Copiar 1s ease-in-out;
+    position: absolute; 
+    top: 250px;
+    height: 6%;
+    right: 130px;
+    bottom: 0px;
+    background-color: rgb(253, 251, 252);
+    font-size: 18px;
+    font-style: oblique;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    animation: Copiar 1s ease-in-out;
 
   }
 
-  #Copiar p {
-      text-align: center;
-  }
   
   @keyframes Copiar {
       0% {
@@ -162,24 +175,72 @@ body{
       }
   }
 
+    /* Cabeçalho */
+    header{
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        font-size: larger;
+        color: antiquewhite;
+        
+      }
+      
+      /* animação do header */
+      .line{
+
+        color: rgb(187, 12, 88);
+        font-family: "VT323";
+        display: flex;
+        border-right-width: 2px;
+        border-right-style: solid;
+        font-size: 2em;
+        animation: cursor 1000ms steps(40) infinite normal, typing 13s steps(50)  normal 10 both;
+        white-space: nowrap;
+        max-width: 0vw; 
+        overflow: hidden;
+
+      }
+     
+
+      @keyframes typing {
+        100% {
+          max-width: 100vw;
+        }
+      }
+
+      @keyframes cursor{
+        100% {
+            border-right-color: transparent;
+          }
+        } /*fim da animação do header*/
+
+
+  /* rodapé */
   footer{
     position: absolute;
+    font-family:'Itim';
     bottom: 0;
-    color: black;
+    color: #791e09;
     width: 100%;
     height: 100px;    
     text-align: center;
     line-height: 100px;
-    font-size: larger;
+    font-size: larger ;
 
   }
-  header{
-    position: absolute;
-    top: 50px;
-    left: 30px;
-    font-size: larger;
-    
+
+  #git{
+      position: relative;
+      left: 30px;
   }
+
+  #linkedin{
+      position:relative;
+      left: 60px;
+  }
+
+
+ 
 
   #seta{
       cursor: pointer;
@@ -196,3 +257,22 @@ body{
 #buttonCript{
     cursor: pointer;
 }
+
+/* Mensagem que aparece na tela quando usa maiúsculo e acentos */
+#mensagemErro {
+    position: absolute; 
+      top: 250px;
+      height: 6%;
+      right: 1000px;
+      bottom: 0px;
+      background-color: rgb(253, 251, 252);
+      font-size: 18px;
+      font-style: oblique;
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      animation: Copiar 1s ease-in-out;
+  
+}
+
