@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador texto</title>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="stylesheet" href="assets/icofont.min.css">
-    
-</head>
-<body>
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Decodificador texto</title>
+      <link rel="stylesheet" href="assets/style.css">
+      <link rel="stylesheet" href="assets/icofont.min.css">
+      
+  </head>
+  <body>
+    <header id="header">
+      <p class="line typing-animation">Decodificador de Texto - Alura Challenges Oracle ONE</p>
+    </header>
+    <main id="main">
+      <div class="container" id="div-cripDes">
+        <div>
+          <textarea id="textCript"></textarea>
+          <input type="button" value="Criptografar" id="btnCript">
+        </div>
 
-  <header class="line typing-animation">
-    Decodificador de Texto - Alura Challenges Oracle ONE 
-  
-  </header>
-  
-  
-  <div class="container">
-  
-    <div id="div-cript" class="div-cont-textarea">
-      <textarea nome = "inputCript" class="TextArea" id="inputCript" cols="30" rows="10"> </textarea>
-      <input type="button" value="Criptografar" id="buttonCript" >
-
-  
-    </div>
-  
-    <div id="div-desc" class="div-cont-textarea">
-      <textarea nome="inputDesc" class="TextArea" id="inputDesc" cols="30" rows="10"></textarea>
-      <input type="button" value="Descriptografar" id="buttonDescr"> 
- 
-    </div>
-   
-  </div> 
-  
-   <img src="arrow-right.svg" id="seta" alt="seta">
-  
-
-   <div class="containeer" id="conteiner">
-     <div id = "div-cop" class="div-cop-textarea" >
-      <textarea nome ="inputCopiar" class="TextAreaa" id="inputCopiar" cols="35" rows="20" placeholder="Copie sua Criptografia "></textarea>
-      <input type="button"  value="Copiar" id="buttonCopiar"  >
-
+        <div>
+          <textarea id="textDesc"></textarea>
+          <input type="button" value="Descriptografar" id="btnDesc">
+        </div>
       </div>
-    </div>
- 
-<footer>
-  <hr>
-   Desenvolvido por - Larissa Beatriz Dias de Sena 
-   <a href="https://github.com/larissadiasdesena" id="git"> Meu github</a>
-   <a href="https://www.linkedin.com/in/larissa-de-sena-60b752188/" id="linkedin"> Meu linkedin</a>
+      
+      <div class="container" id="div-seta"><img src="arrow-right.svg" alt="seta" id="seta"></div>
+      
+      <div class="container" id="div-copiar">
+        <textarea placeholder="Copie sua Criptografia" id="textCopiar"></textarea>
+        <input type="button" value="Copiar" id="btnCopiar">
+      </div>
+    </main>
   
-</footer>
-
-
-
-</body>
-<script src="assets/javaScript.js"></script>
+    <footer id="footer">
+      <hr>
+      <p>Desenvolvido por - Larissa Beatriz Dias de Sena</p>
+      <a href="https://github.com/larissadiasdesena" id="git"> Meu github</a>
+      <a href="https://www.linkedin.com/in/larissa-de-sena-60b752188/" id="linkedin"> Meu linkedin</a>
+    </footer>
+    <script src="assets/javaScript.js"></script>
+  </body>
 </html>
